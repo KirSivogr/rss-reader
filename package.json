@@ -1,11 +1,9 @@
 {
-  "name": "@hexlet/code",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/KirSivogr/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/KirSivogr/frontend-project-11/actions)",
+  "description": "My webpack project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KirSivogr/frontend-project-11.git"
@@ -15,5 +13,27 @@
   "bugs": {
     "url": "https://github.com/KirSivogr/frontend-project-11/issues"
   },
-  "homepage": "https://github.com/KirSivogr/frontend-project-11#readme"
+  "homepage": "https://github.com/KirSivogr/frontend-project-11#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.16.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^6.8.1",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.42.0",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "babel-loader": "^9.1.2",
+    "bootstrap": "^5.2.3"
+  }
 }
