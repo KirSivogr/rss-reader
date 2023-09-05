@@ -1,5 +1,8 @@
 import 'bootstrap';
 import './style.scss';
+import app from './application/init';
 
-console.log("1");
+app();
+
+
 
