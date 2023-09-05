@@ -20,8 +20,8 @@
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "@webpack-cli/generators": "^3.0.7",
-    "css-loader": "^6.8.1",
     "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.1",
     "eslint": "^8.42.0",
     "html-webpack-plugin": "^5.5.3",
     "postcss-loader": "^7.3.3",
@@ -33,7 +33,11 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "babel-loader": "^9.1.2",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "i18next": "^23.4.4",
+    "on-change": "^4.0.2",
+    "yup": "^1.2.0"
   }
 }
