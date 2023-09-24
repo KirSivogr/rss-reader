@@ -12,7 +12,7 @@ i18nextInstance.init({
                 validationError: 'Ссылка должна быть валидным URL',
                 existenceError: 'RSS уже существует',
                 feeds: 'Фиды',
-                posts: 'Посты'
+                posts: 'Посты',
             }
         }
     }
