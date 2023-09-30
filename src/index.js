@@ -3,6 +3,3 @@ import './style.scss';
 import app from './application/init';
 
 app();
-
-
-
