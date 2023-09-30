@@ -13,7 +13,7 @@ Click to try out the [RSS Reader!](https://rss-aggregator-beta.vercel.app/)
 - Installation
 
 ```bash
-git@github.com:DmitryNikolaev98/rss-aggregator.git
+git@github.com:KirSivogr/rss-reader.git
 make install
 ```
 
