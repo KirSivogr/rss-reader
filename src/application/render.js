@@ -11,8 +11,6 @@ export default (elements, state) => (path, value, prevValue) => {
       elements.input.classList.remove('is-invalid');
       elements.form.reset();
       elements.input.focus();
-    } else if (path === 'sending') {
-      elements.submit.disabled = true;
     } else {
       elements.feedback.classList.add('text-danger');
       elements.feedback.classList.remove('text-success');
@@ -20,9 +18,13 @@ export default (elements, state) => (path, value, prevValue) => {
     }
   } else if (path === 'form.error') {
     const { name, errors } = value;
-    const firstError = errors[0];
     if (name === 'ValidationError') {
+      const firstError = errors[0];
       elements.feedback.textContent = firstError;
+    } else if (name === 'TypeError') {
+      elements.feedback.textContent = i18nextInstance.t('typeErrorAnswer');
+    } else if (name === 'AxiosError') {
+      elements.feedback.textContent = i18nextInstance.t('axiosErrorAnswer');
     }
   } else if (path === 'data.feeds') {
     renderFeeds(elements, value, prevValue);

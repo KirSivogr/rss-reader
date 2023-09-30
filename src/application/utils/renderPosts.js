@@ -1,6 +1,6 @@
 import createTitleAndUl from './createTitleAndUl.js';
 
-const createNewPosts = (id, link, title, description, postsUl, state) => {
+const createNewPosts = (feedId, id, link, title, description, postsUl, state) => {
   const li = document.createElement('li');
   const a = document.createElement('a');
   const button = document.createElement('button');
@@ -22,8 +22,8 @@ const createNewPosts = (id, link, title, description, postsUl, state) => {
   a.addEventListener('click', () => {
     a.classList.remove('fw-bold');
     a.classList.add('fw-normal', 'link-secondary');
-    state.readPosts.push({
-      id, link, title, description,
+    state.data.readPosts.push({
+      feedId, id, link, title, description,
     });
   });
 
@@ -37,8 +37,8 @@ const createNewPosts = (id, link, title, description, postsUl, state) => {
     article.href = link;
     a.classList.remove('fw-bold');
     a.classList.add('fw-normal', 'link-secondary');
-    state.readPosts.push({
-      id, link, title, description,
+    state.data.readPosts.push({
+      feedId, id, link, title, description,
     });
   });
 
@@ -56,6 +56,6 @@ export default (elements, value, prevValue, state) => {
   const postsUl = elements.posts.querySelector('ul');
   value = value.slice(0, value.length - prevValue.length).reverse();
   value.forEach((post) => {
-    createNewPosts(post.id, post.link, post.title, post.description, postsUl, state);
+    createNewPosts(post.feedId, post.id, post.link, post.title, post.description, postsUl, state);
   });
 };
